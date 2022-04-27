@@ -130,30 +130,6 @@ def train_and_test():
     model.eval()
 
 
-# 推理在单独的py中
-def img_pre():
-    img0 = cv.imread('/Users/remilia/Documents/02-Work/05-Python/0-source/mnist_test_320x328_7.jpg', -1)
-    img = cv.cvtColor(img0, cv.COLOR_BGR2GRAY)
-    # 高斯去噪
-    img = cv.GaussianBlur(img, (5, 5), 0, 0)
-    img = cv.GaussianBlur(img, (3, 3), 0, 0)
-    # 加亮度去噪
-    c = 0.8
-    b = 90
-    h, w = img.shape
-    black_image = np.zeros([h, w], img.dtype)
-    img = cv.addWeighted(img, c, black_image, 1 - c, b)
-    # 阈值化，裁切，拉伸mnist数据形式
-    ret, thresh = cv.threshold(img, 0, 255, cv.THRESH_OTSU)
-    roi = thresh[50:240, 90:250]
-    roi = cv.bitwise_not(roi)
-    img_result = cv.resize(roi, (28, 28))
-    # 显示
-    cv.imshow('Original', img0)
-    cv.imshow('ImgResult', img_result)
-    return img_result
-
-
 if __name__ == "__main__":
     # train_and_test()  # 需要训练的时候取消注释
     model = CNN_Mnist()
@@ -161,33 +137,3 @@ if __name__ == "__main__":
     for param_tensor in model.state_dict():
         print(param_tensor, "\t", model.state_dict()[param_tensor].size())
 
-    """
-    # 推理
-    # 字典形式的模型文件加载方式，因为字典模型只保留参数，故需要一个已有的同结构的模型来加载这些参数
-    model.load_state_dict(t.load("./0_model/02_cnn_mnist_model.pt"))
-    # model.eval()处理dropout和bn（批规范化）层，否则推理结果可能不正确
-    model.eval()
-
-    # 测试图片输入，测试的话需要把图片reshape成和测试集一样的shape
-    # 图片的预处理，去噪阈值化等等
-    image = img_pre()
-    # 同一开始的transform，归一化，中心化，（-1，1），array(1x784)，tensor
-    img_f = cv.dnn.blobFromImage(image, 0.00392, (28, 28), 127.0) / 0.5
-    print(img_f.shape)
-    # 对比下原来的全连接方式，最后还需要numpy转成tensor
-    # img_f = np.float32(image) / 255.0 - 0.5
-    # img_f = img_f / 0.5
-    # img_f = np.reshape(img_f, (1, 784))
-    # img_f = t.from_numpy(img_f)
-
-    model(img_f)
-    result = model.forward()
-
-    # mnist_net.setInput(blob)
-    # result = mnist_net.forward()
-    pred_label = np.argmax(result, 1)
-    print("predict label : %d" % pred_label)
-
-    cv.waitKey(0)
-    cv.destroyAllWindows()
-    """
