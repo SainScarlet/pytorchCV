@@ -35,7 +35,7 @@ def img_pre():
     roi = cv.bitwise_not(roi)
     roi_size = cv.resize(roi, (28, 28))
 
-    # 输入标准化，归一化，中心化等
+    # 输入标准化，归一化，中心化等, 0.00392=1/255
     img_result = cv.dnn.blobFromImage(roi_size, 0.00392, (28, 28), 127.0) / 0.5
 
     # 显示
