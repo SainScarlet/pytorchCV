@@ -138,7 +138,7 @@ if __name__ == "__main__":
     # tensorboard 记录
     writer = SummaryWriter('./model/writer')
 
-    # 报错，后面需要思考下怎么修改
+    # 报错，后面需要想想怎么修改
     # 循环读取训练集图片和标签
     # dataiter = iter(dataloader)
     # images, _ = dataiter.next()
