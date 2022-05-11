@@ -2,6 +2,8 @@ import torch
 import torch.nn.functional as tf
 from CustomDataset import FaceLandmarksDataset
 from torch.utils.data import Dataset, DataLoader
+from torch.utils.tensorboard import SummaryWriter
+import torchvision as tv
 
 # # 检查是否可以利用GPU
 # # torch暂不支持调用M1的神经处理单元
@@ -133,8 +135,24 @@ if __name__ == "__main__":
     num_train_samples = ds.num_of_samples()
     dataloader = DataLoader(ds, batch_size=16, shuffle=True)
 
+    # tensorboard 记录
+    writer = SummaryWriter('./model/writer')
+
+    # 报错，后面需要思考下怎么修改
+    # 循环读取训练集图片和标签
+    # dataiter = iter(dataloader)
+    # images, _ = dataiter.next()
+
+    # create grid of images
+    # 创新image的网络
+    # img_grid = tv.utils.make_grid(images)
+
+    # 写入tensorboard中
+    # writer.add_image('face_landmark', img_grid)
+    # writer.add_graph(model, images)
+
     # 训练模型的次数
-    num_epochs = 100
+    num_epochs = 1000
     # SGD or Adam，初步测试Adam会更好用一点
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     # optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
@@ -161,11 +179,18 @@ if __name__ == "__main__":
             # 计算平均损失
         train_loss = train_loss / num_train_samples
 
+        writer.add_scalar('training loss',
+                          train_loss,
+                          epoch * len(dataloader) + i_batch)
+
         # 显示训练集与验证集的损失函数
         print('Epoch: {} \tTraining Loss: {:.6f} '.format(epoch, train_loss))
 
-    # # save model
-    # model.eval()
-    # torch.save(model, 'model_landmarks.pt')
+    # save model
+    # torch.save保存模型兼容性太差，不同环境可能会报错，类似_pickle.picklingerror
+    # 还是推荐使用字典保存模型参数
+    # torch.save(model, './model/landmark_full.pt')
     torch.save(model.state_dict(), './model/landmark.pt')
     model.eval()
+
+    writer.close()
