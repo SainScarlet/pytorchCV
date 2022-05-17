@@ -1,4 +1,3 @@
-import torch
 import cv2 as cv
 import numpy as np
 model_bin = "/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Landmark/model/" \
@@ -93,62 +92,76 @@ def video_landmark_demo():
         for detection in cvOut[0, 0, :, :]:
             score = float(detection[2])
             print(score)
-            if score > 0.9:
+            if score > 0.7:
                 left = detection[3]*w
                 top = detection[4]*h
                 right = detection[5]*w
                 bottom = detection[6]*h
                 print(left, top, right, bottom)
 
-                if left > 0 and top > 0 and right > 0 and bottom > 0:
+                # 对于roi超出画面最大值或负数的处理方式,暂时没想到更优雅的处理方式
+                if left < 0:
+                    left = 0
+                if left >= w:
+                     left = w - 1
 
-                    # roi和landmark部分
-                    roi = frame[np.int32(top):np.int32(bottom), np.int32(left):np.int32(right), :]
-                    # print(roi.shape)
-                    cv.imshow("test", roi)
+                if right < 0:
+                    right = 1
+                if right >= w:
+                    right = w - 1
 
-                    rw = right - left
-                    rh = bottom - top
-                    img = cv.resize(roi, (64, 64))
-                    img = (np.float32(img) / 255.0 - 0.5) / 0.5
-                    img = img.transpose((2, 0, 1))
-                    # x_input = torch.from_numpy(img).view(1, 3, 64, 64)
-                    x_input = img.reshape(1, 3, 64, 64)
+                if top < 0:
+                    top = 0
+                if top >= h:
+                    top = h - 1
 
-                    cnn_model.setInput(x_input)
-                    probs = cnn_model.forward()
-                    # probs = cnn_model(x_input.cuda())
-                    lm_pts = probs.reshape(5, 2)
-                    # lm_pts = probs.view(5, 2).cpu().detach().numpy()
+                if bottom < 0:
+                    bottom = 0
+                if bottom >= h:
+                    bottom = h - 1
 
-                    for x, y in lm_pts:
-                        x1 = x * rw
-                        y1 = y * rh
-                        cv.circle(roi, (np.int32(x1), np.int32(y1)), 4, (0, 0, 255), 6, 8, 0)
+                # roi和landmark部分
+                roi = frame[np.int32(top):np.int32(bottom), np.int32(left):np.int32(right), :]
+                # print(roi.shape)
+                cv.imshow("face", roi)
 
-                    # 绘制矩形
-                    cv.rectangle(frame, (int(left), int(top)), (int(right), int(bottom)), (255, 0, 0), thickness=3)
-                    cv.putText(frame, "score:%.2f" % score, (int(left), int(top)),
-                               cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
+                rw = right - left
+                rh = bottom - top
+                img = cv.resize(roi, (64, 64))
+                img = (np.float32(img) / 255.0 - 0.5) / 0.5
+                img = img.transpose((2, 0, 1))
+                # x_input = torch.from_numpy(img).view(1, 3, 64, 64)
+                x_input = img.reshape(1, 3, 64, 64)
 
-                    # w_n = int(0.35*w)
-                    # h_n = int(0.35*h)
-                    # frame = cv.resize(frame, (w_n, h_n))
-                    # pic = cv.resize(pic, (w_n, h_n))
+                cnn_model.setInput(x_input)
+                probs = cnn_model.forward()
+                # probs = cnn_model(x_input.cuda())
+                lm_pts = probs.reshape(5, 2)
+                # lm_pts = probs.view(5, 2).cpu().detach().numpy()
 
-                    cv.imshow("face detection & landmark", frame)
-                    # cv.imshow("original", pic)
+                for x, y in lm_pts:
+                    x1 = x * rw
+                    y1 = y * rh
+                    cv.circle(roi, (np.int32(x1), np.int32(y1)), 4, (0, 0, 255), 6, 8, 0)
 
-                    cv.moveWindow("face detection & landmark", 250, -100)
-                    # cv.moveWindow("original", 0, 0)
+                # 绘制矩形
+                cv.rectangle(frame, (int(left), int(top)), (int(right), int(bottom)), (255, 0, 0), thickness=3)
+                cv.putText(frame, "score:%.2f" % score, (int(left), int(top)),
+                           cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
 
-                    if cv.waitKey(24) & 0xFF == ord(' '):
-                        break
+                # w_n = int(0.35*w)
+                # h_n = int(0.35*h)
+                # frame = cv.resize(frame, (w_n, h_n))
+                # pic = cv.resize(pic, (w_n, h_n))
 
-            #         c = cv.waitKey(1)
-            #         if c == 27:
-            #             break
-            #         cv.imshow("face detection + landmark", frame)
+                cv.imshow("face detection & landmark", frame)
+                # cv.imshow("original", pic)
+
+                cv.moveWindow("face detection & landmark", 250, -100)
+                # cv.moveWindow("original", 0, 0)
+
+                if cv.waitKey(24) & 0xFF == ord(' '):
+                    break
 
     capture.release()
     # cap.release()
