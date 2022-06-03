@@ -108,8 +108,11 @@ if __name__ == "__main__":
     bs = 16
     dataloader = DataLoader(ds, batch_size=bs, shuffle=True)
 
+    # tensorboard 记录
+    writer = SummaryWriter('./model/writer')
+
     # 训练模型的次数
-    num_epochs = 10
+    num_epochs = 60
     # optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     model.train()
@@ -150,8 +153,17 @@ if __name__ == "__main__":
                 print('step: {} \tTraining Loss: {:.6f} '.format(index, loss.item()))
             index += 1
 
+            # t_loss = train_loss / num_train_samples
+            # writer.add_scalar('training loss',
+            #                   t_loss,
+            #                   epoch * len(dataloader) + i_batch)
+
         # 计算平均损失
         train_loss = train_loss / num_train_samples
+
+        writer.add_scalar('training loss',
+                          train_loss,
+                          epoch * len(dataloader) + i_batch)
 
         # 显示训练集与验证集的损失函数
         print('Epoch: {} \tTraining Loss: {:.6f} '.format(epoch, train_loss))
@@ -160,3 +172,5 @@ if __name__ == "__main__":
     model.eval()
     # torch.save(model, './model/vehicle_attributes.pt')
     torch.save(model.state_dict(), './model/vehicle_attributes.pt')
+
+    writer.close()

@@ -27,7 +27,7 @@
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -65,7 +65,7 @@
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -109,7 +109,7 @@
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -151,7 +151,7 @@
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -204,7 +204,7 @@
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -260,7 +260,7 @@
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -298,7 +298,7 @@
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -341,7 +341,7 @@ MaxPool_10"MaxPool*
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -394,7 +394,7 @@ MaxPool_10"MaxPool*
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -450,7 +450,7 @@ MaxPool_10"MaxPool*
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -488,7 +488,7 @@ MaxPool_10"MaxPool*
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -531,7 +531,7 @@ MaxPool_17"MaxPool*
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -572,7 +572,7 @@ MaxPool_18"MaxPool*
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -605,7 +605,7 @@ Reshape_19"Reshape2š/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Ve
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -648,7 +648,7 @@ Reshape_19"Reshape2š/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Ve
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -686,7 +686,7 @@ Sigmoid_21"Sigmoid2­/Users/remilia/miniforge3/envs/py38/lib/python3.8/site-pac
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
@@ -729,7 +729,7 @@ Sigmoid_21"Sigmoid2­/Users/remilia/miniforge3/envs/py38/lib/python3.8/site-pac
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(724): _export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/utils.py(107): export
 /Users/remilia/miniforge3/envs/py38/lib/python3.8/site-packages/torch/onnx/__init__.py(316): export
-/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(15): <module>
+/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Vehicle_Attribute/Pt2Onnx_VA.py(16): <module>
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py(18): execfile
 /Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py(198): runfile
 <ipython-input-2-6223198dda86>(1): <cell line: 1>
