@@ -66,9 +66,15 @@ class FaceLandmarksDataset(Dataset):
 
 
 if __name__ == "__main__":
+    # Mac M1
+    # ds = FaceLandmarksDataset(
+    #     "/Users/remilia/Documents/02-Work/05-Python/0-CustomDb/landmark_dataset/"
+    #     "landmark_output.txt"
+    # )
+
+    # ROG
     ds = FaceLandmarksDataset(
-        "/Users/remilia/Documents/02-Work/05-Python/0-CustomDb/landmark_dataset/"
-        "landmark_output.txt"
+        "D:/2_Work/1_python/0-CustomDb/landmark_dataset/landmark_output_ROG.txt"
     )
     for i in range(len(ds)):
         sample = ds[i]
