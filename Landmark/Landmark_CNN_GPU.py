@@ -158,7 +158,7 @@ if __name__ == "__main__":
     # writer.add_graph(model, images)
 
     # 训练模型的次数
-    num_epochs = 10
+    num_epochs = 10000
     # SGD or Adam，初步测试Adam会更好用一点
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
     # optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
@@ -197,7 +197,7 @@ if __name__ == "__main__":
     # save model
     # torch.save保存模型兼容性太差，不同环境可能会报错，类似_pickle.picklingerror
     # 还是推荐使用字典保存模型参数
-    torch.save(model, './model/landmark_full.pt')
+    torch.save(model, './model/landmark_full_1w.pt')
     # torch.save(model.state_dict(), './model/landmark.pt')
     model.eval()
 
