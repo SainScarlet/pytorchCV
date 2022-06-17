@@ -1,9 +1,13 @@
 import cv2 as cv
 import numpy as np
-model_bin = "/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Landmark/model/" \
+# model_bin = "/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Landmark/model/" \
+#             "opencv_face_detector_uint8.pb"
+# config_text = "/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Landmark/model/" \
+#               "opencv_face_detector.pbtxt"
+model_bin = "D:/2_Work/1_python/pytorchCV/Landmark/model/" \
             "opencv_face_detector_uint8.pb"
-config_text = "/Users/remilia/Documents/02-Work/05-Python/02_pytorchCV/Landmark/model" \
-              "/opencv_face_detector.pbtxt"
+config_text = "D:/2_Work/1_python/pytorchCV/Landmark/model/" \
+              "opencv_face_detector.pbtxt"
 
 
 def image_landmark_demo():
@@ -57,7 +61,7 @@ def image_landmark_demo():
 def video_landmark_demo():
     # cnn_model = torch.load("./model_landmarks.pt")
 
-    cnn_model = cv.dnn.readNetFromONNX('./model/landmark.onnx')
+    cnn_model = cv.dnn.readNetFromONNX('./model/landmark_1w.onnx')
     capture = cv.VideoCapture(0)
     # capture = cv.VideoCapture("/Users/remilia/Documents/02-Work/05-Python/0-source/TestVideo.mp4")
     # 笨办法，复制会很奇怪的错，后面需要优化
